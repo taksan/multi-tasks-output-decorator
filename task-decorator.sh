@@ -85,9 +85,9 @@ function task() {
     ts=''
   fi
 
-  echo -e "${color}[$task_name] *********************************************************************************$NC"
-  echo -e "${color}[$task_name]       Starting task [$task_name] at $(date)$NC"
-  echo -e "${color}[$task_name] *********************************************************************************$NC"
+  echo -e "${color}[$task_name] *********************************************************************************" \
+          "\n[$task_name]            Starting task [$task_name] at $(date)" \
+          "\n[$task_name] *********************************************************************************$NC"
 
   # redirects stdout to add date, task name and colorize it
   exec > >(
